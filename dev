@@ -1,12 +1,12 @@
 [loadbalancer]
-lb01
+lb01 ansible_host=192.168.135.101 ansible_connection=ssh
 
 [webserver]
-app01
-app02
+app01 ansible_host=192.168.135.111 ansible_connection=ssh
+app02 ansible_host=192.168.135.112 ansible_connection=ssh
 
 [database]
-db01
+db01 ansible_host=192.168.135.121 ansible_connection=ssh
 
 [control]
 control ansible_connection=local
